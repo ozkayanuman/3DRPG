@@ -27,8 +27,8 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
-        // kameram oyuncunun pozisyonunun followDistance kaar arkasina olacak
-        // kameramin poziyonu + (oyuncumun arka yonu * followDistance)
+        // kameram oyuncunun pozisyonunun followDistance kadar arkasinda olacak
+        // kameramin pozisyonu + (oyuncumun arka yonu * followDistance)
         if (!isTurnAroundModeOn)
         {
             SmoothMovement(target.position + (-target.forward * followDistance) +
